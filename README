@@ -1,0 +1,117 @@
+db4.1
+------------------------------------------
+Oracle Berkeley DB version 4.1
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  jamvm-1.4.5-1	(for Java bindings)
+  tcl-8.4.15-1	(for Tcl bindings)
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  binutils-20060817-1
+  cygport-0.3.1-1
+  fastjar-0.94-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  jamvm-1.4.5-1
+  jikes-1.22-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.oracle.com/technology/products/berkeley-db/db/index.html
+
+Canonical download:
+  http://download.oracle.com/berkeley-db/
+
+-------------------------------------------
+
+Build instructions:
+  unpack db4.1-4.1.25.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./db4.1-4.1.25.3-X.cygport all
+
+This will create:
+  /usr/src/db4.1-4.1.25.3-X-src.tar.bz2
+  /usr/src/db4.1-4.1.25.3-X.tar.bz2
+  /usr/src/java-db4.1-4.1.25.3-X.tar.bz2
+  /usr/src/libdb4.1-4.1.25.3-X.tar.bz2
+  /usr/src/libdb4.1-devel-4.1.25.3-X.tar.bz2
+  /usr/src/tcl-db4.1-4.1.25.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(db4.1)
+  /usr/bin/db4.1_archive.exe
+  /usr/bin/db4.1_checkpoint.exe
+  /usr/bin/db4.1_deadlock.exe
+  /usr/bin/db4.1_dump.exe
+  /usr/bin/db4.1_load.exe
+  /usr/bin/db4.1_printlog.exe
+  /usr/bin/db4.1_recover.exe
+  /usr/bin/db4.1_stat.exe
+  /usr/bin/db4.1_upgrade.exe
+  /usr/bin/db4.1_verify.exe
+  /usr/share/doc/Cygwin/db4.1-4.1.25.3.README
+  /usr/share/doc/db4.1-4.1.25.3/LICENSE
+  /usr/share/doc/db4.1-4.1.25.3/README
+
+(libdb4.1)
+  /usr/bin/cygdb-4.1.dll
+  /usr/bin/cygdb_cxx-4.1.dll
+
+(java-db4.0)
+  /etc/postinstall/java-db4.1.sh
+  /etc/preremove/java-db4.1.sh
+  /usr/bin/cygdb_java-4.1.dll
+  /usr/share/java/db-4.1.jar
+
+(tcl-db4.0)
+  /etc/postinstall/tcl-db4.1.sh
+  /etc/preremove/tcl-db4.1.sh
+  /usr/lib/tcl8.4/db4.1/cygdb_tcl-4.1.dll
+
+(libdb4.1-devel)
+  /etc/postinstall/libdb4.1-devel.sh
+  /etc/preremove/libdb4.1-devel.sh
+  /usr/include/db4.1/db.h
+  /usr/include/db4.1/db_185.h
+  /usr/include/db4.1/db_cxx.h
+  /usr/lib/libdb-4.1.a
+  /usr/lib/libdb-4.1.dll.a
+  /usr/lib/libdb-4.1.la
+  /usr/lib/libdb_cxx-4.1.a
+  /usr/lib/libdb_cxx-4.1.dll.a
+  /usr/lib/libdb_cxx-4.1.la
+  /usr/lib/libdb_java-4.1.la
+  /usr/share/doc/db4.1-4.1.25.3/html/api_c/*
+  /usr/share/doc/db4.1-4.1.25.3/html/api_cxx/*
+  /usr/share/doc/db4.1-4.1.25.3/html/api_tcl/*
+  /usr/share/doc/db4.1-4.1.25.3/html/collections/tutorial/*
+  /usr/share/doc/db4.1-4.1.25.3/html/gsg/C/*
+  /usr/share/doc/db4.1-4.1.25.3/html/gsg/CXX/*
+  /usr/share/doc/db4.1-4.1.25.3/html/gsg/JAVA/*
+  /usr/share/doc/db4.1-4.1.25.3/html/images/*
+  /usr/share/doc/db4.1-4.1.25.3/html/index.html
+  /usr/share/doc/db4.1-4.1.25.3/html/java/*
+  /usr/share/doc/db4.1-4.1.25.3/html/ref/*/*
+  /usr/share/doc/db4.1-4.1.25.3/html/utility/*
+
+------------------
+
+Port Notes:
+
+----- version 4.1.25.3-1 -----
+Built with cygport; bump to patch 3.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
