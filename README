@@ -3,22 +3,21 @@ db4.1
 Oracle Berkeley DB version 4.1
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-15
   jamvm-1.4.5-1	(for Java bindings)
-  tcl-8.4.15-1	(for Tcl bindings)
+  tcl-8.4.18-1	(for Tcl bindings)
 
 Build requirements:
-  cygwin-1.5.25-7
   autoconf2.5-2.61-1
-  binutils-20060817-1
-  cygport-0.3.8-1
+  binutils-20080523-2
+  cygport-0.3.13-1
   fastjar-0.94-1
-  gawk-3.1.5-4
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
   jamvm-1.4.5-1
-  jikes-1.22-3
-  libtool1.5-1.5.23a-2
+  jikes-1.22-4
+  libtool-2.2.2-2
   make-3.81-1
   sed-4.1.5-2
 
@@ -40,6 +39,7 @@ Build instructions:
 This will create:
   /usr/src/db4.1-4.1.25.3-X-src.tar.bz2
   /usr/src/db4.1-4.1.25.3-X.tar.bz2
+  /usr/src/db4.1-doc-4.1.25.3-X.tar.bz2
   /usr/src/java-db4.1-4.1.25.3-X.tar.bz2
   /usr/src/libdb4.1-4.1.25.3-X.tar.bz2
   /usr/src/libdb4.1-devel-4.1.25.3-X.tar.bz2
@@ -50,8 +50,6 @@ This will create:
 Files included in the binary packages:
 
 (db4.1)
-  /etc/postinstall/db4.1.sh
-  /etc/preremove/db4.1.sh
   /usr/bin/db4.1_archive.exe
   /usr/bin/db4.1_checkpoint.exe
   /usr/bin/db4.1_deadlock.exe
@@ -62,7 +60,6 @@ Files included in the binary packages:
   /usr/bin/db4.1_stat.exe
   /usr/bin/db4.1_upgrade.exe
   /usr/bin/db4.1_verify.exe
-  /usr/share/doc/Cygwin/db4.1-4.1.25.3.README
   /usr/share/doc/db4.1-4.1.25.3/LICENSE
   /usr/share/doc/db4.1-4.1.25.3/README
 
@@ -71,8 +68,6 @@ Files included in the binary packages:
   /usr/bin/cygdb_cxx-4.1.dll
 
 (java-db4.0)
-  /etc/postinstall/java-db4.1.sh
-  /etc/preremove/java-db4.1.sh
   /usr/bin/cygdb_java-4.1.dll
   /usr/share/java/db-4.1.jar
 
@@ -93,6 +88,8 @@ Files included in the binary packages:
   /usr/lib/libdb_cxx-4.1.dll.a
   /usr/lib/libdb_cxx-4.1.la
   /usr/lib/libdb_java-4.1.la
+  
+(db4.1-doc)
   /usr/share/doc/db4.1-4.1.25.3/html/api_c/*
   /usr/share/doc/db4.1-4.1.25.3/html/api_cxx/*
   /usr/share/doc/db4.1-4.1.25.3/html/api_tcl/*
@@ -109,6 +106,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 4.1.25.3-2 -----
+Rebuilt.
 
 ----- version 4.1.25.3-2 -----
 Fixed alternatives script.

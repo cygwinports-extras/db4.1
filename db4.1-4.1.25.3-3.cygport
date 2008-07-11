@@ -1,0 +1,5 @@
+inherit berkdb
+
+# tarballs from Sleepycat and Oracle are missing Java sources
+SRC_URI="mirror://debian/pool/main/d/${PN}/${PN}_${PV%.${PVP[3]}}.orig.tar.gz"
+PATCH_URI+=" mirror://portage/sys-libs/db/files/db-${PV%.${PVP[3]}}-java.patch"
